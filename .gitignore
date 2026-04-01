@@ -54,3 +54,4 @@ htmlcov/
 # Azure
 .azure/
 
+.vercel
