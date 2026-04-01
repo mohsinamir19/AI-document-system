@@ -101,7 +101,7 @@ export default function MultiAgentChat() {
         formData.append('file', file);
         
         try {
-            const res = await fetch('http://localhost:8000/upload', { 
+            const res = await fetch('http://ai-doc-backend-mohsin.eastus.azurecontainer.io:8000/upload', { 
                 method: 'POST', 
                 body: formData,
                 signal: AbortSignal.timeout(30000)
@@ -167,7 +167,7 @@ export default function MultiAgentChat() {
         abortControllerRef.current = new AbortController();
 
         try {
-            const response = await fetch('http://localhost:8000/agent-chat', {
+            const response = await fetch('http://ai-doc-backend-mohsin.eastus.azurecontainer.io:8000/agent-chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 
