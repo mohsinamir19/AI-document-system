@@ -1,25 +1,84 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-/* Smooth scrolling animation keyframe */
-@keyframes bounce {
-  0%,
-  80%,
-  100% {
+/* Force word wrapping everywhere */
+* {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Specific markdown fixes */
+.prose * {
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.prose code {
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+
+.prose a {
+  word-break: break-all !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.4);
+}
+
+/* Animations */
+@keyframes slide-in-from-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
     transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
+    opacity: 1;
   }
 }
 
-.animate-bounce {
-  animation: bounce 1.4s infinite;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-.delay-100 {
-  animation-delay: 0.1s;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.delay-200 {
-  animation-delay: 0.2s;
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.4);
+}
+
+/* Animations */
+@keyframes slide-in-from-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

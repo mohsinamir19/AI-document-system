@@ -1,9 +1,56 @@
 .env
-D:\lm ops\project\twin\backend\.env
-D:\lm ops\project\twin\week2
-day1.md
-day2.md
-day3.md
-day4.md 
-day5.md
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Uploads
+uploads/
+*.pdf
+*.docx
+*.csv
+
+# Node
+node_modules/
+.next/
+out/
+build/
+.turbo
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Azure
+.azure/
 
